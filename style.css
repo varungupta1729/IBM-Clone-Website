@@ -3,11 +3,13 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html,body {
   font-family: Arial;
   margin: 0;
   width: 100%;
+  
+
+  
 
 }
 
@@ -17,6 +19,7 @@ body {
 }
 
 .navbar {
+  width: 100vw;
   height: 60px;
   background-color: #131A22;
   color: white;
@@ -135,7 +138,10 @@ body {
 }
 
 .panel-all {
-  margin-left: 15px;
+  margin: 0 15px;
+}
+.panel-all i{
+  margin-right: 5px;
 }
 
 .panel-ops p {
@@ -265,6 +271,19 @@ body {
   padding: 15px 0;
 }
 
+.nav-button button{
+  width: 17vw;
+  height: 28px;
+  margin-right: 12px;
+  font-family: Arial;
+  
+  background-color: rgb(255, 221, 109);
+  color: #000;
+  border: 1px solid rgb(209, 136, 0);
+  display: none;
+  font-weight: 600;
+  border-radius: 3px;
+}
 
 /* important to display */
 
@@ -278,6 +297,7 @@ body {
 /*--image slider --*/
 .image-container {
   position: relative;
+
 }
 
 .image-list {
@@ -413,6 +433,7 @@ body {
 
 /*product card container*/
 .main {
+  
   position: relative;
   font-family: Arial;
   top: -350px;
@@ -654,7 +675,7 @@ body {
   justify-content: space-evenly;
   font-size: 0.9rem;
   padding: 40px 0;
-  overflow: auto;
+  overflow:hidden;
   font-size: 0.9rem;
 }
 
@@ -740,3 +761,31 @@ ul p {
   font-size: 0.8rem;
   color: gray;
 }
+
+@media (max-width:500px) {
+.nav-address{
+  display: none;
+}
+.nav-search{
+  display: none;
+}
+.language{
+  display: none;
+}
+.nav-signin{
+  display: none;
+}
+.nav-cart{
+  display: none;
+}
+
+.hidden{
+  display: none;
+}
+
+.nav-button button{
+  display:block;
+}
+  
+}
+
