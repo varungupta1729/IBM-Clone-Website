@@ -293,6 +293,19 @@ html,body {
 }
 
 
+.fix-down{
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  bottom:0;
+  z-index: 11111111;
+  background-color: white;
+  display: none;
+}
+
+
 
 /*--image slider --*/
 .image-container {
@@ -785,6 +798,9 @@ ul p {
 
 .nav-button button{
   display:block;
+}
+.fix-down{
+  display: flex;
 }
   
 }

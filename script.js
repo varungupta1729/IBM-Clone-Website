@@ -71,6 +71,24 @@ sidebarCloseNavigationEl.addEventListener("click", () => {
   sidebarNavigationEl.classList.toggle("slidebar-show");
 });
 
+
+
+/***** sidebar navigation  */
+const sidebarNavigation = document.getElementById(
+  "sidebar-container-navigation-id"
+);
+const sidebarOpenNavigation = document.getElementById("nav-sidebar");
+const sidebarCloseNavigation = document.getElementById(
+  "sidebar-navigation-close"
+);
+
+//  console.log(sidebarNavigationEl)
+
+sidebarOpenNavigation.addEventListener("click", () => {
+  sidebarNavigation.classList.toggle("slidebar-show");
+});
+
+
 //today deals
 console.log(todayDeal);
 let todayDealProductListEl = document.querySelector(
